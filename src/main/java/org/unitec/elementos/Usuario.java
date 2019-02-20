@@ -5,15 +5,28 @@
  */
 package org.unitec.elementos;
 
+import org.springframework.data.annotation.Id;
+
 /**
  *
  * @author T-107
  */
 public class Usuario {
+    @Id
     private Integer id;
     private String nombre;
     private Localizacion localizacion;
 
+    public Usuario(Integer id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    }
+    
+    @Override
+    public String toString() {
+        return "Usuario{" + "id=" + id + ", nombre=" + nombre + ", localizacion=" + localizacion + '}';
+    }
+   
     public Usuario() {
     }
 
