@@ -18,16 +18,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- *
- * @author T-107
- */
-public class ControladorEmpleado {
-
 @RestController
 @RequestMapping("/api")
 @CrossOrigin
-public class ControladorUsuario {
+
+public class ControladorEmpleado {
+
+
     @Autowired RepoEmpleado repoE;
 
     //1.-Guardar :save()
@@ -41,4 +38,4 @@ public class ControladorUsuario {
     }  
 }
     
-}
+
